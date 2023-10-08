@@ -1,0 +1,7 @@
+container: {type: ColumnPanel}
+components:
+- name: label_1
+  properties: {text: LOG IN, bold: true, align: center, background: '#bcb9b9'}
+  type: Label
+  layout_properties: {grid_position: 'VLLVWY,JGLLAH'}
+is_package: true
