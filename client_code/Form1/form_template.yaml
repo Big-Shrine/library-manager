@@ -1,9 +1,3 @@
+container: {type: ColumnPanel}
+components: []
 is_package: true
-container:
-  type: HtmlTemplate
-  properties: {html: '@theme:single-column.html'}
-components:
-- type: ColumnPanel
-  properties: {}
-  name: content_panel
-  layout_properties: {slot: default}
