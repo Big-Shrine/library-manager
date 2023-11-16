@@ -1,20 +1,24 @@
-container: {type: ColumnPanel}
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{"LUQFTQ":30,"GWBPQD":30}'}
 components:
 - name: label_1
   properties: {text: DASHBOARD, bold: true, font_size: 30, align: center}
   type: Label
-  layout_properties: {grid_position: 'VSEDJP,UUKZAX'}
-- name: button_1
-  properties: {text: button_1}
-  type: Button
-  layout_properties: {grid_position: 'AMGCML,WSBPSL'}
-  event_bindings: {click: button_1_click}
+  layout_properties: {grid_position: 'SBYGUP,KRTLED'}
 - name: button_2
-  properties: {text: button_2}
+  properties: {text: Issue Book}
   type: Button
-  layout_properties: {grid_position: 'AMGCML,NZQQTL'}
+  layout_properties: {grid_position: 'AMGCML,QLWVTM'}
+- name: button_1
+  properties: {text: Add Book}
+  type: Button
+  layout_properties: {grid_position: 'AMGCML,EFAWBX'}
+  event_bindings: {click: button_1_click}
 - name: button_3
-  properties: {text: button_3}
+  properties: {text: 'View Books
+
+      '}
   type: Button
   layout_properties: {grid_position: 'LPINMH,WQONFZ'}
 - name: button_4
