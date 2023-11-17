@@ -1,0 +1,7 @@
+container: {type: ColumnPanel}
+components:
+- name: label_1
+  properties: {text: Issue Books, align: center}
+  type: Label
+  layout_properties: {grid_position: 'PFWZCJ,TENFMJ'}
+is_package: true
