@@ -1,0 +1,11 @@
+container: {type: ColumnPanel}
+components:
+- name: label_1
+  properties: {text: Succ}
+  type: Label
+  layout_properties: {grid_position: 'EDDISR,IWOWHL'}
+- name: label_2
+  properties: {text: Unsucc}
+  type: Label
+  layout_properties: {grid_position: 'JYWKHH,IIEGZV'}
+is_package: true

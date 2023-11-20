@@ -1,15 +1,44 @@
 container: {type: ColumnPanel}
 components:
 - name: label_1
-  properties: {text: Issue Books, align: center}
+  properties: {text: Issue Books, align: center, font_size: 21, bold: true}
   type: Label
   layout_properties: {grid_position: 'PFWZCJ,TENFMJ'}
 - name: label_2
-  properties: {}
+  properties: {text: Customer ID, font_size: 17}
   type: Label
-  layout_properties: {grid_position: 'JDKNQA,GSIIXC'}
-- name: text_box_1
-  properties: {}
+  layout_properties: {grid_position: 'JDKNQA,GSIIXC JCJKER,EVUWAN'}
+- name: label_3
+  properties: {text: BookID, font: '', font_size: 17}
+  type: Label
+  layout_properties: {grid_position: 'JDKNQA,GSIIXC LSAENS,LCFTDH'}
+- name: label_4
+  properties: {text: 'Date Time (YYYY-MM-DD HH:MM:SS)', font_size: 17}
+  type: Label
+  layout_properties: {grid_position: 'JDKNQA,GSIIXC OBGPGO,NATBPR'}
+- name: customer
+  properties: {placeholder: Enter Customer ID, font: '', font_size: 17}
   type: TextBox
-  layout_properties: {grid_position: 'JDKNQA,JJWSTD'}
+  layout_properties: {grid_position: 'JDKNQA,JJWSTD BNXOZM,LCCUKM'}
+- name: bookid
+  properties: {placeholder: Enter BookID to be issued, font_size: 17}
+  type: TextBox
+  layout_properties: {grid_position: 'JDKNQA,JJWSTD JZLUJZ,XDFQPM'}
+- name: datetime
+  properties: {placeholder: Leave empty for current date time, font_size: 17}
+  type: TextBox
+  layout_properties: {grid_position: 'JDKNQA,JJWSTD XZCMBM,RULEVC'}
+- name: button_1
+  properties: {text: Enter, font_size: 20, italic: false, bold: true}
+  type: Button
+  layout_properties: {grid_position: 'VTDLUE,XWZRHG'}
+  event_bindings: {click: button_1_click}
+- name: label_5
+  properties: {text: The entered Customer ID or Book ID is invalid, align: center}
+  type: Label
+  layout_properties: {grid_position: 'LSPZNQ,YGYMIS'}
+- name: label_6
+  properties: {text: Book unavailable, align: center}
+  type: Label
+  layout_properties: {grid_position: 'NFSEPN,EMMDZX'}
 is_package: true
