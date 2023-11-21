@@ -7,7 +7,8 @@ unique_ids:
   modules:
     Module1: '1700216568362860249498098.1472'
     Package1: '170021652321364031919881.759384'
-  server_modules: {}
+  server_modules:
+    ServerModule1: '1700561989615417064620415.55725'
   assets:
     dashboard.html: APPYIK73RNICQU6MWIHDJ2WPCKAKOU6N
     single-column.html: FGJIPG7HXOULL2QMXC5UWXWJIVA2ZXA7

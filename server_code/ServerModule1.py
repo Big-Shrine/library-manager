@@ -1,22 +1,29 @@
-import anvil.server
 import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-import mysql.connector as mys
+import anvil.server
+import pymysql as mys
 cobj=mys.connect(host='localhost',user='root',passwd='Azsxdcfv1*',database='Library',auth_plugin='caching_sha2_password')
 curob=cobj.cursor()
 
-# This is a module.
-# You can define variables and functions here, and use them from any form. For example, in a top-level form:
+# This is a server module. It runs on the Anvil server,
+# rather than in the user's browser.
 #
-#    from . import Module1
+# To allow anvil.server.call() to call functions here, we mark
+# them with @anvil.server.callable.
+# Here is an example - you can replace it with your own:
 #
-#    Module1.say_hello()
+# @anvil.server.callable
+# def say_hello(name):
+#   print("Hello, " + name + "!")
+#   return 42
 #
+
 def executor(h):
   curob.execute(h)
   cobj.commit()
+@anvil.server.callable
 def issueBooks():
   customer=self.customer.text
   bookid=self.bookid.text
