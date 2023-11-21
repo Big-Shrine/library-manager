@@ -30,7 +30,7 @@ def issueBooks():
         status=f"update books set COPIES={str(l)}, STATUS=0 where BOOK_ID={i[0]}"
         executor(status)
       elif l==-1:
-        self.label_6.visible = True
+        alert('Book unavailable')
         continue
       else:
         status=f"update books set COPIES={str(l)} where BOOK_ID={i[0]}"
@@ -49,5 +49,5 @@ def issueBooks():
           executor(issued)
       break
   if not flag:
-    self.label_5.visible = True
+    alert('The entered Customer ID or Book ID is invalid')
     
