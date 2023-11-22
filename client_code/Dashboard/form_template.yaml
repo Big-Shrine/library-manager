@@ -1,35 +1,35 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{"LUQFTQ":30,"GWBPQD":30}'}
+  properties: {col_widths: '{"GWBPQD":30}'}
 components:
 - name: label_1
   properties: {text: DASHBOARD, bold: true, font_size: 30, align: center}
   type: Label
   layout_properties: {grid_position: 'SBYGUP,KRTLED'}
-- name: button_2
-  properties: {text: Issue Book}
+- name: button_1
+  properties: {text: Add Book}
   type: Button
-  layout_properties: {grid_position: 'AMGCML,QLWVTM'}
-  event_bindings: {click: button_2_click}
+  layout_properties: {grid_position: 'MIJVOJ,SEQAGC'}
+  event_bindings: {click: button_1_click}
 - name: button_3
   properties: {text: 'View Books
 
       '}
   type: Button
   layout_properties: {grid_position: 'AMGCML,SLLUUZ'}
-- name: button_1
-  properties: {text: Add Book}
-  type: Button
-  layout_properties: {grid_position: 'LPINMH,GTBGDQ'}
-  event_bindings: {click: button_1_click}
 - name: button_4
   properties: {text: Add Membership}
   type: Button
-  layout_properties: {grid_position: 'LPINMH,XYYDJS'}
+  layout_properties: {grid_position: 'LELWYK,TQRFYQ'}
 - name: button_5
   properties: {text: Return Book}
   type: Button
-  layout_properties: {grid_position: 'PQWTOW,LUQFTQ'}
+  layout_properties: {grid_position: 'IWFHEJ,WJJHPW'}
+- name: button_2
+  properties: {text: Issue Book}
+  type: Button
+  layout_properties: {grid_position: 'KSJETJ,UMSQSH'}
+  event_bindings: {click: button_2_click}
 - name: button_6
   properties: {text: Check Overdue}
   type: Button
