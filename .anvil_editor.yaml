@@ -5,8 +5,7 @@ unique_ids:
     IssueBooks: '170021657974265113746994.75758'
     Login: '1696764059018114288787962.80074'
   modules: {}
-  server_modules:
-    ServerModule1: '1700561989615417064620415.55725'
+  server_modules: {}
   assets:
     DALL·E 2023-11-22 15.13.43 - heavenly book archive digital art.png: '1700646405185906895529700.0365'
     dashboard.html: APPYIK73RNICQU6MWIHDJ2WPCKAKOU6N
