@@ -11,17 +11,17 @@ components:
   type: Button
   layout_properties: {grid_position: 'AMGCML,QLWVTM'}
   event_bindings: {click: button_2_click}
-- name: button_1
-  properties: {text: Add Book}
-  type: Button
-  layout_properties: {grid_position: 'AMGCML,EFAWBX'}
-  event_bindings: {click: button_1_click}
 - name: button_3
   properties: {text: 'View Books
 
       '}
   type: Button
-  layout_properties: {grid_position: 'LPINMH,WQONFZ'}
+  layout_properties: {grid_position: 'AMGCML,SLLUUZ'}
+- name: button_1
+  properties: {text: Add Book}
+  type: Button
+  layout_properties: {grid_position: 'LPINMH,GTBGDQ'}
+  event_bindings: {click: button_1_click}
 - name: button_4
   properties: {text: Add Membership}
   type: Button

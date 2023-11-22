@@ -58,4 +58,17 @@ def issueBooks():
       break
   if not flag:
     alert('The entered Customer ID or Book ID is invalid')
-    
+
+@anvil.server.callable
+def addBook():
+   bkid=self.bookid2.text
+   gre=self.genre.text
+   bkname=self.bookname.text
+   auth=self.author.text
+   copies=int(self.copies.text)
+   if copies!=0:
+     status=1
+   else:
+     status=0
+   st="Insert into books values('{}','{}','{}','{}',{},{})".format(bkid,gre,bkname,auth,copies,status)
+   executor(st) 

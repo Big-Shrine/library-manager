@@ -1,0 +1,52 @@
+container: {type: ColumnPanel}
+components:
+- name: label_1
+  properties: {text: Add Books, align: center, bold: true, font_size: 21}
+  type: Label
+  layout_properties: {grid_position: 'QHPZFA,WCANDF'}
+- name: label_2
+  properties: {text: 'Book ID:', font_size: 17}
+  type: Label
+  layout_properties: {grid_position: 'DYBOAH,TTGOYG'}
+- name: bookid2
+  properties: {placeholder: Enter a BookID for the book, font_size: 17}
+  type: TextBox
+  layout_properties: {grid_position: 'DYBOAH,LWBCCZ'}
+- name: label_3
+  properties: {text: 'Genre:', font_size: 17}
+  type: Label
+  layout_properties: {grid_position: 'HKPMVG,AYNUPR'}
+- name: genre
+  properties: {placeholder: Enter the genre of the book, font_size: 17}
+  type: TextBox
+  layout_properties: {grid_position: 'HKPMVG,CMLETS'}
+- name: label_4
+  properties: {text: 'Book Name:', font_size: 17}
+  type: Label
+  layout_properties: {grid_position: 'NBOSZH,CWZXKG'}
+- name: bookname
+  properties: {placeholder: Enter the book's name, font_size: 17}
+  type: TextBox
+  layout_properties: {grid_position: 'NBOSZH,QBBOEB'}
+- name: label_5
+  properties: {text: 'Author Name:', font_size: 17}
+  type: Label
+  layout_properties: {grid_position: 'JWILKC,JSHQCA'}
+- name: author
+  properties: {placeholder: Enter the name of the author, font_size: 17}
+  type: TextBox
+  layout_properties: {grid_position: 'JWILKC,QXUYYX'}
+- name: label_6
+  properties: {text: 'Copies:', font_size: 17}
+  type: Label
+  layout_properties: {grid_position: 'GWEMDN,SKWVFD'}
+- name: copies
+  properties: {placeholder: Enter the number of copies of the book, font_size: 17}
+  type: TextBox
+  layout_properties: {grid_position: 'GWEMDN,RYKZZX'}
+- name: button_1
+  properties: {text: ENTER, font_size: 20, bold: true}
+  type: Button
+  layout_properties: {grid_position: 'DBGBVJ,LJNYRS'}
+  event_bindings: {click: button_1_click}
+is_package: true
