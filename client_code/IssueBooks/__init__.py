@@ -15,4 +15,12 @@ class IssueBooks(IssueBooksTemplate):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    anvil.server.call('issueBooks')
+    customer=self.customer.text
+    bookid=self.bookid.text
+    datetime=self.datetime.text
+    result_message=anvil.server.call('issueBooks', customer, bookid, datetime)
+    alert(result_message)
+    if result_message=="Book issued successfully":
+      open_form('Dashboard')
+      
+    
