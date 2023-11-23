@@ -20,6 +20,9 @@ class IssueBooks(IssueBooksTemplate):
     datetime=self.datetime.text
     result_message=anvil.server.call('issueBooks', customer, bookid, datetime)
     alert(result_message)
+    self.customer.text=''
+    self.bookid.text=''
+    self.datetime.text=''
 
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
