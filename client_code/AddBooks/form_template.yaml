@@ -44,8 +44,13 @@ components:
   properties: {placeholder: Enter number of copies of the book, font_size: 17}
   type: TextBox
   layout_properties: {grid_position: 'GWEMDN,RYKZZX'}
+- name: button_2
+  properties: {text: Back, font: '', bold: true, font_size: 20}
+  type: Button
+  layout_properties: {grid_position: 'DBGBVJ,HZXKCZ'}
+  event_bindings: {click: button_2_click}
 - name: button_1
-  properties: {text: ENTER, font_size: 20, bold: true}
+  properties: {text: Submit, font_size: 20, bold: true}
   type: Button
   layout_properties: {grid_position: 'DBGBVJ,LJNYRS'}
   event_bindings: {click: button_1_click}

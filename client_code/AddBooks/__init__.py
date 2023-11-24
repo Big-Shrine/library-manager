@@ -20,4 +20,9 @@ class AddBooks(AddBooksTemplate):
     bkname=self.bookname.text
     auth=self.author.text
     copies=int(self.copies.text)
-    anvil.server.call('addBook', bkid, gre, bkname, auth, copies)
+    result_message=anvil.server.call('addBook', bkid, gre, bkname, auth, copies)
+    alert(result_message)
+
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Dashboard')
