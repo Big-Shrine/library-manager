@@ -15,4 +15,9 @@ class AddBooks(AddBooksTemplate):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    anvil.server.call('addBook')
+    bkid=self.bookid2.text
+    gre=self.genre.text
+    bkname=self.bookname.text
+    auth=self.author.text
+    copies=int(self.copies.text)
+    anvil.server.call('addBook', bkid, gre, bkname, auth, copies)
