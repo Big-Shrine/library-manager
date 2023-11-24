@@ -5,7 +5,7 @@ components:
   type: Label
   layout_properties: {grid_position: 'QHPZFA,WCANDF'}
 - name: label_2
-  properties: {text: 'Book ID:', font_size: 17}
+  properties: {text: 'Book ID: *', font_size: 17}
   type: Label
   layout_properties: {grid_position: 'DYBOAH,TTGOYG'}
 - name: bookid2
@@ -13,7 +13,7 @@ components:
   type: TextBox
   layout_properties: {grid_position: 'DYBOAH,LWBCCZ'}
 - name: label_3
-  properties: {text: 'Genre:', font_size: 17}
+  properties: {text: 'Genre: *', font_size: 17}
   type: Label
   layout_properties: {grid_position: 'HKPMVG,AYNUPR'}
 - name: genre
@@ -21,7 +21,7 @@ components:
   type: TextBox
   layout_properties: {grid_position: 'HKPMVG,CMLETS'}
 - name: label_4
-  properties: {text: 'Book Name:', font_size: 17}
+  properties: {text: 'Book Name: *', font_size: 17}
   type: Label
   layout_properties: {grid_position: 'NBOSZH,CWZXKG'}
 - name: bookname
@@ -29,7 +29,7 @@ components:
   type: TextBox
   layout_properties: {grid_position: 'NBOSZH,QBBOEB'}
 - name: label_5
-  properties: {text: 'Author Name:', font_size: 17}
+  properties: {text: 'Author Name: *', font_size: 17}
   type: Label
   layout_properties: {grid_position: 'JWILKC,JSHQCA'}
 - name: author
@@ -37,7 +37,7 @@ components:
   type: TextBox
   layout_properties: {grid_position: 'JWILKC,QXUYYX'}
 - name: label_6
-  properties: {text: 'Copies:', font_size: 17}
+  properties: {text: 'Copies: *', font_size: 17}
   type: Label
   layout_properties: {grid_position: 'GWEMDN,SKWVFD'}
 - name: copies

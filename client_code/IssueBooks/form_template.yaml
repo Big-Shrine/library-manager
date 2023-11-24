@@ -5,11 +5,11 @@ components:
   type: Label
   layout_properties: {grid_position: 'PFWZCJ,TENFMJ'}
 - name: label_2
-  properties: {text: Customer ID, font_size: 17}
+  properties: {text: Customer ID *, font_size: 17}
   type: Label
   layout_properties: {grid_position: 'JDKNQA,GSIIXC JCJKER,EVUWAN'}
 - name: label_3
-  properties: {text: BookID, font: '', font_size: 17}
+  properties: {text: BookID *, font: '', font_size: 17}
   type: Label
   layout_properties: {grid_position: 'JDKNQA,GSIIXC LSAENS,LCFTDH'}
 - name: label_4
