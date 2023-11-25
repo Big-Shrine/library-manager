@@ -1,0 +1,39 @@
+container: {type: DataRowPanel}
+components:
+- type: Label
+  properties: {}
+  name: label_1
+  layout_properties: {column: BMDAJY}
+  data_bindings:
+  - {property: text, code: 'self.item[''BOOK_ID'']'}
+- type: Label
+  properties: {}
+  name: label_2
+  layout_properties: {column: TXFUKJ}
+  data_bindings:
+  - {property: text, code: 'self.item[''CATEGORY'']'}
+- type: Label
+  properties: {}
+  name: label_3
+  layout_properties: {column: MYDXNU}
+  data_bindings:
+  - {property: text, code: 'self.item[''NAME'']'}
+- type: Label
+  properties: {}
+  name: label_4
+  layout_properties: {column: CSVMPF}
+  data_bindings:
+  - {property: text, code: 'self.item[''AUTHOR'']'}
+- type: Label
+  properties: {}
+  name: label_5
+  layout_properties: {column: ECYVXN}
+  data_bindings:
+  - {property: text, code: 'self.item[''COPIES'']'}
+- type: Label
+  properties: {}
+  name: label_6
+  layout_properties: {column: VEXNAH}
+  data_bindings:
+  - {property: text, code: 'self.item[''STATUS'']'}
+is_package: true
