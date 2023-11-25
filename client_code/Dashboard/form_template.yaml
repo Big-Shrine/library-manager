@@ -17,6 +17,7 @@ components:
       '}
   type: Button
   layout_properties: {grid_position: 'AMGCML,SLLUUZ'}
+  event_bindings: {click: button_3_click}
 - name: button_4
   properties: {text: Add Membership}
   type: Button
