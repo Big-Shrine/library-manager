@@ -27,7 +27,8 @@ components:
   layout_properties: {grid_position: 'WYWDRO,ZPLWYF'}
   components:
   - type: RepeatingPanel
-    properties: {spacing_above: none, spacing_below: none, item_template: ViewBooks.RowTemplate1}
+    properties: {spacing_above: none, spacing_below: none, item_template: ViewBooks.RowTemplate1,
+      visible: true}
     name: repeating_panel_1
     layout_properties: {}
 is_package: true
