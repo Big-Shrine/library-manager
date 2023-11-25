@@ -11,12 +11,12 @@ class ViewBooks(ViewBooksTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.init_components(**properties)
-    if type(anvil.server.call('view_books'))
-    self.repeating_panel_1.items = anvil.server.call('view_books')
-    self.label_1.text = self.item['BOOK_ID']
-    self.label_2.text = self.item['CATEGORY']
-    self.label_3.text = self.item['NAME']
-    self.label_4.text = self.item['AUTHOR']
-    self.label_5.text = self.item['COPIES']
-    self.label_6.text = self.item['STATUS']
+    if type(anvil.server.call('view_books')) == type(''):
+      alert(anvil.server.call('view_books'))
+    else:
+      self.repeating_panel_1.items = anvil.server.call('view_books')
    # Any code you write here will run before the form opens.
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Dashboard')

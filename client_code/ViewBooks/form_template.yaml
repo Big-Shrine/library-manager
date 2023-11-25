@@ -2,21 +2,25 @@ container:
   type: ColumnPanel
   properties: {col_widths: '{}'}
 components:
+- name: label_1
+  properties: {text: Book availablity, font_size: 21, bold: true, align: center}
+  type: Label
+  layout_properties: {grid_position: 'TLZWLN,WEXJKO'}
 - type: DataGrid
   properties:
     role: null
     columns:
-    - {id: BMDAJY, title: Column 1, data_key: column_1, $$hashKey: 'object:34818'}
-    - {id: TXFUKJ, title: Column 2, data_key: column_2, $$hashKey: 'object:34819'}
-    - {id: MYDXNU, title: Column 3, data_key: column_3, $$hashKey: 'object:34820'}
-    - {id: CSVMPF, title: Column 4, data_key: column_4, $$hashKey: 'object:34849'}
-    - {id: ECYVXN, title: Column 5, data_key: column_5, $$hashKey: 'object:34851'}
-    - {id: VEXNAH, title: Column 6, data_key: column_6, $$hashKey: 'object:34853'}
+    - {id: BMDAJY, title: Book ID, data_key: Book ID, $$hashKey: 'object:34818'}
+    - {id: TXFUKJ, title: Genre, data_key: Genre, $$hashKey: 'object:34819'}
+    - {id: MYDXNU, title: Book, data_key: Book, $$hashKey: 'object:34820'}
+    - {id: CSVMPF, title: Author, data_key: Author, $$hashKey: 'object:34849'}
+    - {id: ECYVXN, title: Copies, data_key: Copies, $$hashKey: 'object:34851'}
+    - {id: VEXNAH, title: Status, data_key: Status, $$hashKey: 'object:34853'}
     auto_header: true
     tooltip: ''
     border: ''
     foreground: ''
-    rows_per_page: 20
+    rows_per_page: 10
     visible: true
     wrap_on: never
     show_page_controls: true
@@ -31,4 +35,9 @@ components:
       visible: true}
     name: repeating_panel_1
     layout_properties: {}
+- name: button_1
+  properties: {text: Back, font_size: 18, bold: true}
+  type: Button
+  layout_properties: {grid_position: 'PWKJCC,YSNDCV'}
+  event_bindings: {click: button_1_click}
 is_package: true

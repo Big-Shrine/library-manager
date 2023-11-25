@@ -1,4 +1,6 @@
-container: {type: DataRowPanel}
+container:
+  type: DataRowPanel
+  properties: {font_size: 16}
 components:
 - type: Label
   properties: {}
