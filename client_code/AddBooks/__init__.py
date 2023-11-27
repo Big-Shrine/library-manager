@@ -15,15 +15,13 @@ class AddBooks(AddBooksTemplate):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    bkid=str(self.bookid2.text)
-    gre=str(self.genre.text)
-    bkname=str(self.bookname.text)
-    auth=str(self.author.text)
-    copies=eval(self.copies.text)
-    result_message=anvil.server.call('addBook', bkid, gre, bkname, auth, copies)
+    gre = self.genre.text
+    bkname = self.bookname.text
+    auth = self.author.text
+    copies = self.copies.text
+    result_message = anvil.server.call('addBook', gre, bkname, auth, copies)
     alert(result_message)
     if result_message == "Book added successfully":
-      self.bookid2.text=''
       self.genre.text=''
       self.bookname.text=''
       self.author.text=''
