@@ -1,6 +1,6 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{"GWBPQD":30}'}
+  properties: {col_widths: '{}'}
 components:
 - name: label_1
   properties: {text: DASHBOARD, bold: true, font_size: 30, align: center}
@@ -19,9 +19,13 @@ components:
   layout_properties: {grid_position: 'AMGCML,SLLUUZ'}
   event_bindings: {click: button_3_click}
 - name: button_4
-  properties: {text: Add Membership}
+  properties: {text: Add Members}
   type: Button
   layout_properties: {grid_position: 'LELWYK,TQRFYQ'}
+- name: button_6
+  properties: {text: View Members}
+  type: Button
+  layout_properties: {grid_position: 'NPWKGJ,CDECBN'}
 - name: button_5
   properties: {text: Return Book}
   type: Button
@@ -31,8 +35,4 @@ components:
   type: Button
   layout_properties: {grid_position: 'KSJETJ,UMSQSH'}
   event_bindings: {click: button_2_click}
-- name: button_6
-  properties: {text: Check Overdue}
-  type: Button
-  layout_properties: {grid_position: 'PQWTOW,GWBPQD'}
 is_package: true
