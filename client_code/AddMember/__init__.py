@@ -12,3 +12,19 @@ class AddMember(AddMemberTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    name = self.name.text
+    email = self.email.text
+    phone_number = self.phonenumber.text
+    address = self.address.text
+    result_message=anvil.server.call('addCustomer', name, email, phone_number, address)
+    alert(result_message)
+    if result_message == "Customer added successfully":
+      self.name.text=''
+      self.email.text=''
+      self.phonenumber.text=''
+      self.address.text=''
+      
+    

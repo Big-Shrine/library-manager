@@ -22,6 +22,7 @@ components:
   properties: {text: Add Members}
   type: Button
   layout_properties: {grid_position: 'LELWYK,TQRFYQ'}
+  event_bindings: {click: button_4_click}
 - name: button_6
   properties: {text: View Members}
   type: Button
