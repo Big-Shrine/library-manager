@@ -36,6 +36,11 @@ components:
   properties: {font_size: 17, placeholder: Enter the customers address}
   type: TextBox
   layout_properties: {grid_position: 'MNMWTH,PFMKLZ XFBAYA,MEHCRK'}
+- name: button_2
+  properties: {text: Back, font_size: 15, bold: true}
+  type: Button
+  layout_properties: {grid_position: 'AWNBMK,FGUSPW'}
+  event_bindings: {click: button_2_click}
 - name: button_1
   properties: {text: 'Submit
 
