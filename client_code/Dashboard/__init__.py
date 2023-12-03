@@ -33,3 +33,7 @@ class Dashboard(DashboardTemplate):
     """This method is called when the button is clicked"""
     open_form('ViewMember')
 
+  def button_5_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('ReturnBook')
+
