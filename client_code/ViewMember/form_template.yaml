@@ -14,7 +14,7 @@ components:
     - {id: WAYDKH, data_key: column_4, title: Phone number}
     - {id: BAKTTT, data_key: column_5, title: Address}
     - {id: AVCENV, data_key: column_1, title: Books Issued}
-    wrap_on: mobile
+    wrap_on: never
   type: DataGrid
   components:
   - name: repeating_panel_1
