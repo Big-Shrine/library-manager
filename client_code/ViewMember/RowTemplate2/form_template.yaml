@@ -1,0 +1,40 @@
+is_package: true
+container: {type: DataRowPanel}
+components:
+- name: label_1
+  properties: {}
+  type: Label
+  layout_properties: {column: JKSDUP}
+  data_bindings:
+  - {property: text, code: 'self.item[''customer_ID'']'}
+- name: label_2
+  properties: {}
+  type: Label
+  layout_properties: {column: VJQQOR}
+  data_bindings:
+  - {property: text, code: 'self.item[''customer_Name'']'}
+- name: label_3
+  properties: {}
+  type: Label
+  layout_properties: {column: OJLQEN}
+  data_bindings:
+  - {property: text, code: 'self.item[''Email'']'}
+- name: label_4
+  properties: {}
+  type: Label
+  layout_properties: {column: WAYDKH}
+  data_bindings:
+  - {property: text, code: 'self.item[''Phone_Number'']'}
+- name: label_5
+  properties: {}
+  type: Label
+  layout_properties: {column: BAKTTT}
+  data_bindings:
+  - {property: text, code: 'self.item[''Address'']'}
+- name: label_6
+  properties: {}
+  type: Label
+  layout_properties: {column: AVCENV}
+  data_bindings:
+  - {property: text, code: 'self.item[''books_issued'']', writeback: false}
+data_bindings: []

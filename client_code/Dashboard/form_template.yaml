@@ -27,6 +27,7 @@ components:
   properties: {text: View Members}
   type: Button
   layout_properties: {grid_position: 'NPWKGJ,CDECBN'}
+  event_bindings: {click: button_6_click}
 - name: button_5
   properties: {text: Return Book}
   type: Button

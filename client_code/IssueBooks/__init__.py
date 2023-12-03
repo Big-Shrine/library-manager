@@ -12,12 +12,12 @@ class IssueBooks(IssueBooksTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     # Any code you write here will run before the form opens.
-    customer=self.customer.text
-    bookid=self.bookid.text
-    datetime=self.datetime.text
+    
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-
+    customer=int(self.customer.text)
+    bookid=int(self.bookid.text)
+    datetime=self.datetime.text
     result_message=anvil.server.call('issueBooks', customer, bookid, datetime)
     alert(result_message)
     if result_message == 'Book issued successfully':

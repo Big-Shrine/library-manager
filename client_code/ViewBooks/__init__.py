@@ -10,7 +10,6 @@ class ViewBooks(ViewBooksTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.init_components(**properties)
     if type(anvil.server.call('view_books')) == type(''):
       alert(anvil.server.call('view_books'))
     else:
