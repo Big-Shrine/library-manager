@@ -32,9 +32,4 @@ components:
   properties: {text: Return Book}
   type: Button
   layout_properties: {grid_position: 'IWFHEJ,WJJHPW'}
-- name: button_2
-  properties: {text: Issue Book}
-  type: Button
-  layout_properties: {grid_position: 'KSJETJ,UMSQSH'}
-  event_bindings: {click: button_2_click}
 is_package: true
